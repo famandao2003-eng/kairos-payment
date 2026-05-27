@@ -22,3 +22,6 @@ Route::get('/confirmation', function () {
     return view('confirmation');
 });
 
+Route::fallback(function () {
+    return redirect('/');
+});
