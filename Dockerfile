@@ -1,8 +1,8 @@
 FROM php:8.2-cli
 
 RUN apt-get update && apt-get install -y \
-git unzip zip curl libzip-dev \
-&& docker-php-ext-install zip
+    git unzip zip curl libzip-dev nodejs npm \
+    && docker-php-ext-install zip
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
@@ -11,6 +11,9 @@ WORKDIR /app
 COPY . .
 
 RUN composer install
+
+RUN npm install
+RUN npm run build
 
 EXPOSE 10000
 
