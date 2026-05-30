@@ -2,6 +2,11 @@
 
 @section('content')
 
+<h1 style="color:red;font-size:60px;">
+TEST FAMA 999
+</h1>
+
+
 <div class="student-card">
 
     <img 
