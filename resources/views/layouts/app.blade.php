@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>KAIROS test fama</title>
-    <link rel="stylesheet" href="{{ asset('css/kairos.css') }}">
+    <link rel="stylesheet" href="/css/kairos.css">
 </head>
 <body>
 
