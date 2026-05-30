@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KAIROS</title>
+    <title>KAIROS test fama</title>
     <link rel="stylesheet" href="{{ asset('css/kairos.css') }}">
 </head>
 <body>
